@@ -1,0 +1,10 @@
+**** Mus Spil ****
+bruger indtaster 0
+bruger indtaster 1
+bruger indtaster 2
+bruger indtaster 3
+bruger indtaster 4
+bruger indtaster 5
+bruger indtaster 6
+bruger indtaster 7
+bruger indtaster 8
