@@ -4,7 +4,27 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws java.io.IOException {
+    public static void main(String[] args) throws java.io.IOException  {
+        Main main = new Main();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Do you want to start a new game og load a previous one \n1: new game \n2: load game");
+        int choice = input.nextInt();
+        while (true) {
+            if (choice == 1) {
+                main.newGame();
+                break;
+            } else if (choice == 2) {
+                main.loadGame();
+                break;
+            } else {
+                System.out.println("WRONG INPUT, 1 OR 2?!?!?:");
+            }
+
+        }
+
+
+    }
+    private void newGame() throws java.io.IOException{
         Scanner input = new Scanner(System.in);
         File file = new File("MusLog.txt");
         PrintWriter output = new PrintWriter(file);
@@ -12,7 +32,6 @@ public class Main {
 
         int randomNumber = (int)(Math.random()*5+5);
         System.out.println("Antallet af pebbernødder er = " + randomNumber);
-
 
         int[] pebbernuts = new int[randomNumber];
 
@@ -60,10 +79,8 @@ public class Main {
         }
 
         output.close();
-
-
-
-
+    }
+    private void loadGame() throws java.io.IOException {
 
     }
 
